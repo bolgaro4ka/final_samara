@@ -4,23 +4,14 @@
     font-family: Ubuntu;
 }
 
-body {}
-
-header ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    height: 60px;
-    gap: 20px;
+:root {
+	--text-color: #E7D7FA;
+	--bg-color: #0A0211;
+	--bg-light-color: #271A30;
+	--primary-color: #2BD85F;
+	--secondary-color: #B0E8B3;
 }
 
-header {
-    background-color: #55BB55;
-    height: 60px;
-    text-align: center;
-    padding: 0 50px 0 50px;
-}
 
 #userPicture img {
     width: 200px;
@@ -36,11 +27,13 @@ header {
 .userInfo {
     display: flex;
     justify-content: space-around;
-    background-color: lightblue;
+    background-color: var(--secondary-color);
     padding: 30px;
     border-radius: 15px;
     margin: 20px 0 20px;
 }
+
+.userInfo h2, .userInfo h3 {color: var(--bg-color);}
 
 .options {
     display: flex;
@@ -56,3 +49,78 @@ header {
 }
 
 .card img {width: 300px;}
+
+a, span, p, div,
+h1, h2, h3, h4, h5, h6 {
+	color: var(--text-color);
+}
+
+body {
+	background-color: var(--bg-color);
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    height: 60px;
+    gap: 20px;
+    color: white;
+}
+
+header {
+	border-bottom: 1px solid var(--bg-light-color);
+    height: 60px;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.block {
+	padding: 16px;
+	margin: 16px;
+	border: 1px solid var(--bg-light-color);
+	border-radius: 32px;
+}
+
+.block > h2 {
+	color: var(--bg-color);
+	background-color: var(--secondary-color);
+	border-radius: 16px;
+	margin-bottom: 16px;
+	text-align: center;
+	font-size: 32px;
+}
+
+.block > p {
+	font-size: 22px;
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    height: 60px;
+    gap: 20px;
+}
+
+footer {
+	border-bottom: 1px solid var(--bg-light-color);
+    height: 60px;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
