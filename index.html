@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МедГос</title>
+    <link rel="stylesheet" href="styles/stylesMainPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><img src="img/logo.png" width="130"></li>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li onclick="alert('Не забыть бы сделать')">О нас</li>
+                <li id="search">
+                    <input name="searchField" id="searchField"/>
+                    <button name="letsGoSearch" id="letsGoSearch">Найти</button>
+                    <script src="scripts/search.js"></script>
+                </li>
+                <li><a href="register/login.html" id="signUpButton">Войти в личный кабинет</a></li>
+            </ul>
+        </ul>
+    </header>
+    <main class="wrapper">
+        <div class="hero">
+            <img src="img/hero.png">
+            <div class="heroText">
+                <h2>МедГос - медицинский портал нового уровня</h2>
+                <div>                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus ut impedit doloremque rem aspernatur at consequatur accusamus pariatur nemo vitae nobis minus nesciunt dolorem, sunt libero quasi tempore culpa.</p>
+                    <div class="heroButtons">
+                        <a href="register/login.html" class="heroButton">Записаться на приём к врачу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
