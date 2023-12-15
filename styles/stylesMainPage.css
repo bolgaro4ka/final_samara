@@ -1,10 +1,31 @@
+
+:root {
+	--text-color: #E7D7FA;
+	--bg-color: #0A0211;
+	--bg-light-color: #271A30;
+	--primary-color: #2BD85F;
+	--secondary-color: #B0E8B3;
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: Roboto;
+    font-family: "Tilt Wrap";
 }
 
-body {}
+a, span, p, div,
+h1, h2, h3, h4, h5, h6 {
+	color: var(--text-color);
+}
+
+body {
+	background-color: var(--bg-color);
+}
+
+.wrapper {
+	width: 1100px;
+	margin: 0 auto;
+}
 
 header ul {
     display: flex;
@@ -16,69 +37,127 @@ header ul {
 }
 
 header {
-    background-color: #55BB55;
+	border-bottom: 1px solid var(--bg-light-color);
     height: 60px;
     text-align: center;
     padding: 0 50px 0 50px;
 }
 
-.wrapper {
-    max-width: 1440px;
-    min-width: 1000px;
-    margin: 0 auto;
-}
-
 .hero img {
-    width: 600px;
+	height: 400px;
+	border-radius: 16px;
+	padding: 16px;
+	margin: 0 32px 0 0;
+	background-color: var(--primary-color);
 }
-#letsGoSearch {
-    padding: 5px 10px 5px 10px;
-    background-color: #88CC88;
-    border-radius: 5px;
-    border: none;
-    transition: background-color;
-    transition-duration: 0.5s;
-}
-
-#searchField {
-    padding: 2px 10px 5px 10px;
-    border-radius: 5px;
-    border: none;
-    border-color: #999;
-}
-
-#letsGoSearch:hover {background-color: #AADDAA;}
 
 .hero {
     display: flex;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #99BB99;
-    margin: 20px;
+	padding: 16px;
+    border-radius: 32px;
+    border: 1px solid var(--bg-light-color);
+	margin: 16px;
 }
 
-.heroText *{margin-top: 10px;}
+.heroText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
-.heroButtons {
-    border-radius: 20px;
-    border: 3px solid #AADDAA;
+.heroDesc {
+	margin-top: 16px;
+}
+
+.heroDesc p {
+	margin-bottom: 16px;
+}
+
+.heroButton {
+	display: block;
+    border-radius: 16px;
+    border: 3px solid var(--secondary-color);
     text-align: center;
-    margin-top: 100px;
     width: 300px;
     padding: 10px;
-    transition: background-color;
     transition-duration: 1s;
+}
+
+.heroButton:hover {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	color: var(--bg-light-color);
+}
+
+.heroButton {
+	color: inherit;
 }
 
 a {
     text-decoration: none;
-    color: black
 }
 
-.heroButtons:hover {
-    background-color: #AADDAA;
+.block {
+	padding: 16px;
+	margin: 16px;
+	border: 1px solid var(--bg-light-color);
+	border-radius: 32px;
 }
 
-#signUpButton {background-color: black; color: white; border-radius: 10px; padding: 5px 15px 5px 15px; transition: color; transition-duration: 1s;}
+.block > h2 {
+	color: var(--bg-color);
+	background-color: var(--secondary-color);
+	border-radius: 16px;
+	margin-bottom: 16px;
+	text-align: center;
+	font-size: 32px;
+}
 
-#signUpButton:hover {color: #AADDAA;}
+.block > p {
+	font-size: 22px;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.block > div > details {
+	margin-bottom: 16px;
+}
+
+.block > div > details:last-child {
+	margin-bottom: 0;
+}
+
+.block > div > details > summary::before {
+	content: 'В: ';
+}
+
+.block > div > details > summary {
+    list-style-type: '';
+	font-size: 24px;
+	padding: 4px 8px;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	border-radius: 16px;
+	border: 1px solid var(--bg-light-color);
+	cursor: pointer;
+}
+
+.block > div > details > div::before {
+	content: 'О: ';
+}
+
+.block > div > details > div {
+	background-color: var(--bg-color);
+	padding: 8px;
+	border-radius: 16px;
+	border: 1px solid var(--bg-light-color);
+}
+
+.block > div > details[open] > summary {
+	margin-bottom: 4px;
+    list-style-type: '';
+	color: var(--bg-color);
+	border: none;
+	background-color: var(--primary-color);
+}
+

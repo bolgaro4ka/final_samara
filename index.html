@@ -7,40 +7,81 @@
     <link rel="stylesheet" href="styles/stylesMainPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <ul>
             <li><img src="img/logo.png" width="130"></li>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li onclick="alert('Не забыть бы сделать')">О нас</li>
-                <li id="search">
-                    <input name="searchField" id="searchField"/>
-                    <button name="letsGoSearch" id="letsGoSearch">Найти</button>
-                    <script src="scripts/search.js"></script>
-                </li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contactus">Обратная связь</a></li>
+                <li><a href="#faq">ЧаВо</a></li>
                 <li><a href="register/login.html" id="signUpButton">Войти в личный кабинет</a></li>
             </ul>
         </ul>
     </header>
     <main class="wrapper">
-        <div class="hero">
+        <section class="hero">
             <img src="img/hero.png">
             <div class="heroText">
                 <h2>МедГос - медицинский портал нового уровня</h2>
-                <div>                
+                <div class="heroDesc">                
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus ut impedit doloremque rem aspernatur at consequatur accusamus pariatur nemo vitae nobis minus nesciunt dolorem, sunt libero quasi tempore culpa.</p>
-                    <div class="heroButtons">
-                        <a href="register/login.html" class="heroButton">Записаться на приём к врачу</a>
-                    </div>
+                    <a href="register/login.html" class="heroButton">Записаться на приём к врачу</a>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
+        </section>
 
+		<section id="about" class="block">
+			<h2>О нас</h2>
+
+			<p>Dolor alias ut perspiciatis dolorem alias? Ad facere ab corrupti iure inventore? Eaque fuga ipsum ratione at fugit. Incidunt doloribus magnam facere deleniti eligendi? Non iste ea numquam soluta repellendus. Sit eaque repudiandae dignissimos eligendi beatae! Facere sunt magni laboriosam quisquam voluptas Soluta ab eum suscipit totam vel Distinctio provident sapiente blanditiis reprehenderit dolor velit Illum molestias ad velit magni</p>
+		</section>
+
+		<section id="contactus" class="block">
+			<h2>Обратная связь</h2>
+
+			<p>
+				Lorem doloremque velit minus obcaecati reiciendis! Animi exercitationem molestias aut voluptate cupiditate. Excepturi optio harum fugit natus corrupti adipisci Enim sed similique explicabo repellat omnis Itaque laborum nam quas dolorem:<br>
+				a@a.a<br>
+				@eee
+			</p>
+		</section>
+
+		<section id="faq" class="block">
+			<h2>Часто-задаваемые вопросы</h2>
+
+			<div>
+				<details>
+					<summary>да</summary>
+					<div>нет</div>
+				</details>
+				<details>
+					<summary>да</summary>
+					<div>нет</div>
+				</details>
+				<details>
+					<summary>да</summary>
+					<div>нет</div>
+				</details>
+				<details>
+					<summary>да</summary>
+					<div>нет</div>
+				</details>
+				<details>
+					<summary>да</summary>
+					<div>нет</div>
+				</details>
+				<details>
+					<summary>да</summary>
+					<div>нет</div>
+				</details>
+			</div>
+		</section>
+	</main>
+    <footer>
+		
     </footer>
 </body>
 </html>
