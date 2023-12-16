@@ -10,6 +10,7 @@
 	--bg-light-color: #271A30;
 	--primary-color: #2BD85F;
 	--secondary-color: #B0E8B3;
+    --card-color: #
 }
 
 
@@ -33,26 +34,45 @@
     margin: 20px 0 20px;
 }
 
-.userInfo h2, .userInfo h3 {color: var(--bg-color);}
+.userInfo h1, .userInfo h3 {color: var(--bg-color);}
 
 .options {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    text-align: center;
 }
 
 .card {
-    background-color: #999999;
+    background-color: black;
     border-radius: 15px;
     padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
 }
 
-.card img {width: 300px;}
+.card img {width: 300px; border-radius: 15px;}
 
 a, span, p, div,
 h1, h2, h3, h4, h5, h6 {
 	color: var(--text-color);
+}
+
+.goToDoc {
+	display: block;
+    border-radius: 16px;
+    border: 3px solid var(--secondary-color);
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    transition-duration: 1s;
+    margin: 20px 0;
+}
+
+.goToDoc:hover {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	color: var(--bg-light-color);
 }
 
 body {
@@ -124,3 +144,11 @@ footer {
     text-align: center;
     padding: 0 50px 0 50px;
 }
+
+form {display: flex; flex-direction: column;}
+
+form input {background-color: var(--bg-light-color); color: var(--text-color); height: 30px; margin: 5px 0;}
+
+form input:last-child {height: 60px;}
+
+#file {height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 2px dashed var(--secondary-color);}

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МедГос - Личный кабинет</title>
     <link rel="stylesheet" href="styles/stylesCabinet.css">
+    <link rel="stylesheet" href="styles/stylesMainPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -12,6 +20,7 @@
             <li><img src="img/logo.png" width="130"></li>
             <ul>
                 <li>Записаться к врачу</li>
+                <li><a href="account.html">Аккаунт</a></li>
                 <li><a href="index.html">Выйти</a></li>
             </ul>
         </ul>
@@ -21,52 +30,45 @@
             <div class="userInfo">
                 <div id="userPicture"><img src="img/undefinded_user.png"></div>
                 <div>
-                    <h2 id="userName">Test User</h2>
-                    <h3 id="born">03.03.14</h3>
+                    <h1 id="userName">N/A</h1>
+                    <h3 id="born">День рождение: N/A</h3>
                 </div>
             </div>
             <div class="options">
                 <div class="card" href="index.html">
                     <img src="img/options.jpeg">
-                    <h3>Запись к врачу</h3>
-                    <h4>Пройти запись к врачу</h4>
-                    <a class="goToDoc">Записаться к врачу</a>
+                    <div>
+                        <h2>Запись к врачу (оффлайн)</h2>
+                        <h4>Записаться на приём к врачу</h4>
+                        <a class="goToDoc" href="offlineToDoc.html">Продолжить</a>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="img/options.jpeg">
-                    <h3>Запись к врачу</h3>
-                    <h4>Пройти запись к врачу</h4>
-                    <a class="goToDoc">Записаться к врачу</a>
-
+                    <div>
+                        <h2>Созвон с врачём</h2>
+                        <h4>Онлайн встреча с врачём</h4>
+                        <a class="goToDoc">Продолжить</a>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="img/options.jpeg">
-                    <h3>Запись к врачу</h3>
-                    <h4>Пройти запись к врачу</h4>
-                    <a class="goToDoc">Записаться к врачу</a>
-
+                    <div>
+                        <h2>Отправить мед. документы</h2>
+                        <h4>Отправка медицинских документов врачу</h4>
+                        <a class="goToDoc" href="sendDocs.html">Продолжить</a>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="img/options.jpeg">
-                    <h3>Запись к врачу</h3>
-                    <h4>Пройти запись к врачу</h4>
-                    <a class="goToDoc">Записаться к врачу</a>
-
+                    <div>
+                        <h2>Получить справку</h2>
+                        <h4>Получение справок от врача</h4>
+                        <a class="goToDoc">Продолжить</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/options.jpeg">
-                    <h3>Запись к врачу</h3>
-                    <h4>Пройти запись к врачу</h4>
-                    <a class="goToDoc">Записаться к врачу</a>
 
-                </div>
-                <div class="card">
-                    <img src="img/options.jpeg">
-                    <h3>Запись к врачу</h3>
-                    <h4>Пройти запись к врачу</h4>
-                    <a class="goToDoc">Записаться к врачу</a>
-
-                </div>
+            </div>
         </div>
     </main>
     <footer>
