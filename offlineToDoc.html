@@ -26,15 +26,16 @@
     <main class="wrapper">
         <div class="block">
             <h2>Запись к врачу</h2>
-            <form>
+            <div class="form">
                 <label for="time">Время</label>
                 <input type="time" name="time" id="time" required>
                 <label for="date">Дата</label>
                 <input type="date" name="date" id="date" required>
                 <label for="tel">Контактный номер телефона</label>
                 <input type="tel" name="tel" id="tel" required>
-                <input type="submit">
-            </form>
+                <button id="send">Отправить</button>
+                <p id="InfoText"></p>
+            </div>
             
 
         </div>
@@ -47,5 +48,6 @@
 			</ul>
 		</ul>
     </footer>
+    <script src="scripts/send.js"></script>
 </body>
 </html>

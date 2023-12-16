@@ -26,14 +26,15 @@
     <main class="wrapper">
         <div class="block">
             <h2>Отправка документов</h2>
-            <form>
+            <div class="form">
                 <label for="time">Отправить документы</label>
                 <input type="file" name="file" id="file" required>
                 <label for="text">Комментарий (необязательно)</label>
                 <input type="text" name="text" id="text" required>
                 
-                <input type="submit">
-            </form>
+                <button id="send">Отправить</button>
+                <p id="InfoText"></p>
+            </div>
             
 
         </div>
@@ -46,5 +47,6 @@
 			</ul>
 		</ul>
     </footer>
+    <script src="scripts/sendfile.js"></script>
 </body>
 </html>

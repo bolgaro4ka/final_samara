@@ -145,10 +145,10 @@ footer {
     padding: 0 50px 0 50px;
 }
 
-form {display: flex; flex-direction: column;}
+.form {display: flex; flex-direction: column;}
 
-form input {background-color: var(--bg-light-color); color: var(--text-color); height: 30px; margin: 5px 0;}
+.form input, .form button {background-color: var(--bg-light-color); color: var(--text-color); height: 30px; margin: 5px 0;}
 
-form input:last-child {height: 60px;}
+.form button {height: 60px;}
 
 #file {height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 2px dashed var(--secondary-color);}
