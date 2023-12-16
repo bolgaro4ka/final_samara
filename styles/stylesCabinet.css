@@ -10,7 +10,6 @@
 	--bg-light-color: #271A30;
 	--primary-color: #2BD85F;
 	--secondary-color: #B0E8B3;
-    --card-color: #
 }
 
 
@@ -28,7 +27,7 @@
 .userInfo {
     display: flex;
     justify-content: space-around;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 30px;
     border-radius: 15px;
     margin: 20px 0 20px;
@@ -36,24 +35,41 @@
 
 .userInfo h1, .userInfo h3 {color: var(--bg-color);}
 
+.wrapper > h1 {
+	margin: 16px 0;
+	border-radius: 32px;
+	text-align: center;
+	background: var(--secondary-color);
+	color: var(--bg-color);
+}
+
 .options {
     display: flex;
-    flex-wrap: wrap;
+	justify-content: center;
+    flex-direction: row;
+	flex-wrap: wrap;
     gap: 30px;
+	margin-bottom: 16px;
 }
 
 .card {
-    background-color: black;
-    border-radius: 15px;
-    padding-bottom: 10px;
-    width: 100%;
+    padding: 16px;
+	border: 1px solid var(--bg-light-color);
+	border-radius: 15px;
     display: flex;
-    gap: 20px;
+	height: 350px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.card img {width: 300px; border-radius: 15px;}
+.card img {
+	filter: invert(62%) sepia(99%) saturate(358%) hue-rotate(83deg) brightness(91%) contrast(97%);
+	width: 200px;
+	border-radius: 15px;
+}
 
-a, span, p, div,
+a, span, p, div, li,
 h1, h2, h3, h4, h5, h6 {
 	color: var(--text-color);
 }
@@ -139,7 +155,7 @@ footer ul {
 }
 
 footer {
-	border-bottom: 1px solid var(--bg-light-color);
+	border-top: 1px solid var(--bg-light-color);
     height: 60px;
     text-align: center;
     padding: 0 50px 0 50px;
