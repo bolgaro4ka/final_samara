@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МедГос - Личный кабинет</title>
     <link rel="stylesheet" href="styles/stylesCabinet.css">
+    <link rel="stylesheet" href="styles/stylesMainPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
@@ -27,10 +28,10 @@
     <main>
         <div class="wrapper">
             <div class="userInfo">
-                <div id="userPicture"><img src="img/thispersondoesnotexist.jpg"></div>
+                <div id="userPicture"><img src="img/undefinded_user.png"></div>
                 <div>
-                    <h1 id="full_name"></h1>
-                    <h3 id="born">День рождения:&nbsp;</h3>
+                    <h1 id="userName">N/A</h1>
+                    <h3 id="born">День рождения: N/A</h3>
                 </div>
             </div>
 			<h1>Услуги</h1>
@@ -47,8 +48,8 @@
                     <img src="img/pic2.svg">
                     <div>
                         <h2>Созвон с врачём</h2>
-                        <h4>С</h4>
-                        <a class="goToDoc">Продолжить</a>
+                        <h4>Созвониться с врачем и обсудить что-либо</h4>
+						<a class="goToDoc" href="call.html">Продолжить</a>
                     </div>
                 </div>
                 <div class="card">
@@ -86,6 +87,5 @@
 			</ul>
 		</ul>
     </footer>
-    <script src="scripts/account.js" type="module"></script>
 </body>
 </html>
