@@ -8,7 +8,7 @@
 	--text-color: #E7D7FA;
 	--bg-color: #0A0211;
 	--bg-light-color: #271A30;
-	--primary-color: #2BD85F;
+	--primary-color: #20A85F;
 	--secondary-color: #B0E8B3;
 }
 
@@ -159,50 +159,6 @@ footer {
     height: 60px;
     text-align: center;
     padding: 0 50px 0 50px;
-}
-
-.bbWrapper {
-	display: flex;
-	justify-content: center;
-}
-
-.blackBox {
-	border-radius: 32px;
-	margin: 16px 0;
-	height: 60vh;
-	width: 60vw;
-	background-color: #000;
-	color: #050505;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 32px;
-	font-family: "Noto Emoji", sans-serif;
-}
-
-.callButtons {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: 16px 0;
-}
-
-.callButton {
-	width: 32px;
-	height: 32px;
-	padding: 16px;
-	margin: 0 8px;
-	border-radius: 100%;
-	background: var(--primary-color);
-}
-
-.callButton:last-child {
-	background-color: #f44;
-}
-
-.callButton img {
-	width: 32px;
-	filter: invert(100%);
 }
 
 .form {display: flex; flex-direction: column;}
