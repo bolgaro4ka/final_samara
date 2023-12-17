@@ -27,7 +27,7 @@
 .userInfo {
     display: flex;
     justify-content: space-around;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 30px;
     border-radius: 15px;
     margin: 20px 0 20px;
